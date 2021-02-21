@@ -1,0 +1,25 @@
+.component-categories {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+    //& :hover disini digunakan untuk menambahkan satu element animasi untuk statement component categories saja
+    //jadi pada compenent categories ketika kursor diarahkan pada suatu icon categories otomatis melakukan animation
+    //lalu text decoration digunakan agar tidak ada underline karena menggunakan a href
+    //ini meurpakan styling dari sisi containernya belum
+  }
+
+  .categories-text {
+    color: #0c0d36;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 12px;
+    //styling untuk text yang dibawah icon categories seperti gadgets, furniture dll
+  }
+}

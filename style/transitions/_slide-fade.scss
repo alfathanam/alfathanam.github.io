@@ -1,0 +1,14 @@
+.slide-fade-enter-active {
+  transition: all 0.2s ease;
+  //css untuk animation perpindahan ketika gambar active
+}
+.slide-fade-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+  //perpindah end point atau ganti detail gambar lainnya
+}
+.slide-fade-enter,
+.slide-leave-to {
+  //transformnya perpindahnya secara vertikal sebanyak 10px
+  transform: translateX(10px);
+  opacity: 0.5;
+}

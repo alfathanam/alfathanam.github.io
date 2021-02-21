@@ -1,0 +1,53 @@
+.component-products {
+  margin-bottom: 20px;
+  &:hover {
+    text-decoration: none;
+    //statement ini menimpa atau mengacu pada stament yang ada pada index
+    //untuk nama class component-product yang dibuat disini dan yang di index harus sama
+    //margin bottom agar ada space kosong antarproduk dibwh sebesar 20px
+  }
+  .products-thumbnail {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &:hover,
+    &:focus {
+      .products-image {
+        transform: scale(1.1);
+        //statement ini untuk mengatur thubmnail seperti berapa besar dan tinggi thumnail images
+        //dan overflow: hidden ketika animasi gambar tidak akan keluar atau sama
+        //z-index digunakan agar border radius tidak hilang karena jika
+      }
+    }
+
+    .products-image {
+      width: 100%;
+      height: 100%;
+
+      background-color: #ddd;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      transition: all 0.3s ease;
+      //karena kita menyimpan images thumnail didalam div maka melakukan ini
+      //bukan image src
+      //disini heigt nya 100% karena thumnail sebelum dianimation adalah 150px agar tetap fit
+    }
+  }
+
+  .products-text {
+    font-weight: normal;
+    font-size: 18spx;
+    color: #0c0d36;
+    margin-top: 12px;
+  }
+  .products-price {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ff7158;
+  }
+}
